@@ -43,7 +43,7 @@ const GeneralMarketKnw = () => {
 
         let userSession = sessionStorage.getItem("sessionId");
         if(userSession == null) {
-            navigate("/personal-info")
+            navigate("/")
         }else {
             sessionStorage.setItem("sessionId", userSession);
             setFormData((prevState) => ({
