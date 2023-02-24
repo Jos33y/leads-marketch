@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PageFooter from "../components/page-footer";
 import "./styles/pages.css";
@@ -9,7 +9,6 @@ import { SendClick } from "../../php/sendClick";
 const GeneralPersonalInfo = () => {
 
     const navigate = useNavigate();
-    const myFunctionRef = useRef(null);
 
     const [formData, setFormData] = useState({
         fullName: '',
@@ -37,11 +36,11 @@ const GeneralPersonalInfo = () => {
     }
 
     
-    const setSessions = () => {
+    const setSessions = async () => {
 
         let userSession = sessionStorage.getItem("sessionId");
         if (userSession == null) {
-            userSession = genPassword();
+            userSession = await genPassword();
             sessionStorage.setItem("sessionId", userSession);
         } else {
             sessionStorage.setItem("sessionId", userSession);
@@ -51,7 +50,7 @@ const GeneralPersonalInfo = () => {
             ...prevState,
             userSessions: userSession,
         }))
-        //SendClick('personal info page');
+        // SendClick('personal info page');
 
     }
 
@@ -76,8 +75,7 @@ const GeneralPersonalInfo = () => {
 
     useEffect(() => {
 
-        myFunctionRef.current = setSessions;
-        myFunctionRef.current();
+        setSessions();
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])

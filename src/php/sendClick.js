@@ -16,3 +16,5 @@ export const SendClick = (title) => {
 }
 
 // http://localhost/westore/marketch/click.php
+
+// https://johngoodell.biz/mk/click.php
