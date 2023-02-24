@@ -19,7 +19,7 @@ const GeneralConcludingQue = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("experience", formData);
+       
         SendFinalQue('c-que', formData);
         navigate("/g-thanks")
     }

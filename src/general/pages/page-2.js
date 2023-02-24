@@ -20,7 +20,6 @@ const GeneralTradingExp = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("trading exp", formData);
         SendTradingExp('t-exp', formData)
         navigate("/g-3")
     }

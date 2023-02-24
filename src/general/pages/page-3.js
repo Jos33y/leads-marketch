@@ -22,7 +22,7 @@ const GeneralFinancialBg = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("finance bg", formData);
+        
         SendFinanceBg('f-bg', formData);
         navigate("/g-4")
     }

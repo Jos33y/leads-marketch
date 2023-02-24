@@ -4,6 +4,7 @@ import PageFooter from "../components/page-footer";
 import "./styles/pages.css";
 import ImageOne from "../../assets/general/pg-1.png";
 import { SendPersonalInfo } from "../../php/sendGeneral";
+// eslint-disable-next-line
 import { SendClick } from "../../php/sendClick";
 
 const GeneralPersonalInfo = () => {

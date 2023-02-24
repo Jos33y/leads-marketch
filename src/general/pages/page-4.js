@@ -22,7 +22,7 @@ const GeneralMarketKnw = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("market know", formData);
+        
         SendMarketKnow('m-know', formData);
         navigate("/g-5")
     }
