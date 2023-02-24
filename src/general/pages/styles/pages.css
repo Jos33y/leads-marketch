@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html {
+    height: stretch;
+    height: -webkit-fill-available;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #23272f;
+}
+
+/* form body section */
+.page-body {
+    background: rgb(254, 254, 254);
+    margin: 80px 50px;
+}
+
+.page-form-body {
+    background: #f2f4fe;
+    padding: 20px 0px;
+    min-height: 100vh;
+    min-height: stretch;
+    min-height: -webkit-fill-available;
+    border-radius: 15px;
+
+    box-shadow: 0px 0px 30px 7px rgba(209, 209, 209, 0.75);
+    -webkit-box-shadow: 0px 0px 30px 7px rgba(209, 209, 209, 0.75);
+    -moz-box-shadow: 0px 0px 30px 7px rgba(209, 209, 209, 0.75);
+}
+
+/* form section one */
+.p-form-header {
+    margin-top: 50px;
+    padding: 20px 30px;
+}
+
+.p-form-header h4.form-title {
+    font-size: 35px;
+    color: #122179;
+    font-weight: 700;
+    text-align: center;
+}
+
+.p-form-header .p-form-progress-bar p {
+    font-size: 13px;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+}
+
+.p-form-progress-bar .bar-one {
+    height: 22px;
+    padding: 1px 2px 5px;
+    border-radius: 20px;
+    border: 2px solid #c3c3c3;
+    width: 100%;
+}
+
+.p-form-progress-bar .bar-two {
+    height: 16px;
+    border-radius: 20px;
+    background: #122179;
+    width: 20%;
+}
+
+.p-form-progress-bar .bar-three {
+    height: 16px;
+    border-radius: 20px;
+    background: #122179;
+    width: 40%;
+}
+
+.p-form-progress-bar .bar-four {
+    height: 16px;
+    border-radius: 20px;
+    background: #122179;
+    width: 60%;
+}
+
+.p-form-progress-bar .bar-five {
+    height: 16px;
+    border-radius: 20px;
+    background: #122179;
+    width: 80%;
+}
+
+.p-form-progress-bar .bar-six {
+    height: 16px;
+    border-radius: 20px;
+    background: #122179;
+    width: 100%;
+}
+
+/* form section two - list of form data to fill  */
+.p-form-data-titles {
+    margin-top: 50px;
+    background: #fafdff;
+}
+
+.p-form-data-titles .p-form-data-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+}
+
+.p-form-data-titles .fa-regular {
+    font-size: 40px;
+    padding-right: 5px;
+}
+
+.p-form-data-titles .p-form-data-list ul li {
+    margin: 20px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #979ea4;
+}
+
+.p-form-data-titles .p-form-data-list ul li.active-page {
+    color: #217912;
+    font-weight: 600;
+}
+
+.p-form-data-titles .p-form-data-list ul li span.p-text {
+    position: relative;
+    top: -10px;
+}
+
+/* form section three - current page title and description */
+.p-form-current-title {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.p-form-current-title h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #122179;
+}
+
+.p-form-current-title p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #122179;
+}
+
+/* form section four - input sections to fill form details  */
+.p-form-input-sections {
+    margin-top: 30px;
+    padding: 20px 50px;
+}
+
+.p-form-input-sections .form-group {
+    margin: 15px 10px;
+}
+
+.p-form-input-sections .form-group label.label-primary {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #122179;
+}
+
+.p-form-input-sections .form-group input.form-control {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    background: #e5e8fe;
+    border: 1px solid #ddeef9;
+}
+
+.p-form-input-sections .form-group select {
+    height: 70px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    background: #e5e8fe;
+    color: #122179;
+    border: 1px solid #e5e8fe;
+}
+
+.p-form-input-sections .form-group textarea {
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 1px;
+    background: #e5e8fe;
+    color: #122179;
+    border: 1px solid #e5e8fe;
+}
+
+.p-form-input-sections .form-group input::placeholder {
+    color: #122179;
+}
+
+.p-form-input-sections .form-group textarea::placeholder {
+    color: #122179;
+}
+
+.p-form-input-sections .form-group input.form-control:focus {
+    outline: #122179;
+    border: 2px solid #122179;
+    box-shadow: none;
+}
+
+.p-form-input-sections .form-group .p-form-check {
+    margin: 10px 0;
+    border: 0px solid #122179;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px rgba(158, 158, 158, 0.75);
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(158, 158, 158, 0.75);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(158, 158, 158, 0.75);
+}
+
+.p-form-input-sections .form-group .p-form-check label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #122179;
+    margin-left: 10px;
+}
+
+.p-form-input-sections .form-group .p-form-check label .small-label {
+    font-size: 11px;
+    font-weight: 400;
+    color: #363636;
+}
+
+.p-form-input-sections .form-group input.form-check-input {
+    width: 15px;
+    height: 15px;
+    border-radius: 1px;
+    border: 1px solid #122179;
+}
+
+.p-form-input-sections .form-group input.form-check-input:focus {
+    outline: #122179;
+    box-shadow: none;
+}
+
+.p-form-input-sections .form-group textarea:focus {
+    outline: #122179;
+    border: 2px solid #122179;
+    box-shadow: none;
+}
+
+.p-form-input-sections .form-group select:focus {
+    outline: #122179;
+    border: 2px solid #122179;
+    box-shadow: none;
+}
+
+/* form section five - image and button  */
+.p-form-footer-section {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px 40px;
+}
+
+.p-form-image-section {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.p-form-image-section img {
+    position: relative;
+    width: 100%;
+    left: -60px;
+}
+
+.p-form-footer-section .p-form-button-section {
+    text-align: right;
+    margin-top: 25%;
+}
+
+.p-form-footer-section .p-form-button-section .btn {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    padding: 0 40px;
+    border-radius: 1px;
+}
+
+.p-form-footer-section .p-form-button-section .btn.btn-primary {
+    background: #122179;
+    color: #ffffff;
+    border: 2px solid #e5e8fe;
+}
+
+.p-form-footer-section .p-form-button-section .btn.btn-secondary {
+    background: transparent;
+    color: #122179;
+    border: 2px solid #a9b1ff;
+    margin-right: 30px;
+}
+
+.p-form-footer-section .p-form-button-section .btn.btn-primary .fa-solid {
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.p-form-footer-section .p-form-button-section .btn.btn-secondary .fa-solid {
+    padding-right: 30px;
+    font-size: 16px;
+}
+
+/* page footer */
+.page-footer {
+    margin-top: 5%;
+    padding-bottom: 20px;
+}
+
+.page-footer p {
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    color: #122179;
+}
+
+/* thanks Image styles - image, text and button  */
+.thanks-body {
+    border: 0px solid #23272f;
+    box-shadow: 0px 0px 30px 7px rgba(209, 209, 209, 0.75);
+    -webkit-box-shadow: 0px 0px 30px 7px rgba(209, 209, 209, 0.75);
+    -moz-box-shadow: 0px 0px 30px 7px rgba(209, 209, 209, 0.75);
+}
+
+.thanks-body .thanks-body-top {
+    padding: 30px;
+    text-align: center;
+    background: #455bae;
+}
+
+.thanks-body .thanks-body-top .thanks-body-icon {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.thanks-body .thanks-body-top .thanks-body-icon .fa-regular {
+    font-size: 180px;
+    color: #61b546;
+}
+
+.thanks-body .thanks-body-top .thanks-body-top-text {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.thanks-body .thanks-body-top .thanks-body-top-text .text-body-section {
+    max-width: 600px;
+}
+
+.thanks-body .thanks-body-top .thanks-body-top-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.thanks-body .thanks-body-top .thanks-body-top-text p {
+    font-size: 25px;
+}
+
+.thanks-body-bottom {
+    padding: 30px 0px 0px;
+}
+
+.thanks-body-bottom .thanks-body-button {
+    text-align: center;
+    margin: 30px 30px;
+}
+
+.thanks-body-bottom .thanks-body-button .btn {
+    width: 60%;
+    height: 60px;
+    color: #ffffff;
+    border-radius: 1px;
+    background: #122179;
+    border: 1px solid #122179;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.thanks-body-bottom .thanks-body-footer {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.thanks-body-bottom .thanks-body-footer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #122179;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.thanks-body-footer-img {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.thanks-body-footer-img .img-one {
+    width: 90%;
+}
+
+.thanks-body-footer-img .img-two {
+    width: 150px;
+    margin-right: 0;
+    padding-right: 0;
+}
